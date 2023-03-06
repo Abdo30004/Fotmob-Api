@@ -1,16 +1,38 @@
 {
   "name": "fotmob-api",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.5",
+  "description": "fotmob api wrapper , get all the data you need from fotmob",
   "main": "index.js",
   "scripts": {
     "start": "ts-node test/index.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Abderrahmane",
+  "license": "MIT",
   "dependencies": {
     "@discordjs/collection": "^1.3.0",
     "axios": "^1.3.4"
+  },
+  "keywords": [
+    "api",
+    "fotmob",
+    "fotmob-api",
+    "fotmob api",
+    "fotmob api wrapper",
+    "fotmob wrapper",
+    "football",
+    "soccer",
+    "football api",
+    "soccer api",
+    "football api wrapper",
+    "soccer api wrapper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abdo30004/Fotmob-Api/"
+  },
+  "bugs": {
+    "url": "https://github.com/Abdo30004/Fotmob-Api/issues",
+    "email": "yahiaoui.abderrahmane.pro@gmail.com"
   },
   "devDependencies": {
     "@types/node": "^18.14.1"
