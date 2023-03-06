@@ -2,7 +2,13 @@
   "name": "fotmob-api",
   "version": "0.0.5",
   "description": "fotmob api wrapper , get all the data you need from fotmob",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+
+  "files": [
+    "dist"
+  ],
+  
   "scripts": {
     "start": "ts-node test/index.ts"
   },
