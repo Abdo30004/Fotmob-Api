@@ -33,5 +33,5 @@ interface ApiSearchResult {
   matches: ApiSearchMatch[];
   squad: ApiSearchSequad[];
   news: ApiSearchNews[];
-  leagues: ApiSearchLeague[];
+ // leagues: ApiSearchLeague[];
 }

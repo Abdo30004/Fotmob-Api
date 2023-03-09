@@ -1,16 +1,15 @@
 {
   "name": "fotmob-api",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "fotmob api wrapper , get all the data you need from fotmob",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],
-  
   "scripts": {
-    "start": "ts-node test/index.ts"
+    "start": "node dist/src/index.js",
+    "build": "tsc"
   },
   "author": "Abderrahmane",
   "license": "MIT",

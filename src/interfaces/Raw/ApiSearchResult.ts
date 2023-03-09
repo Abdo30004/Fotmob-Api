@@ -1,21 +1,13 @@
- export interface ApiSearchResult {
-   matches?: Matches;
-   teams?: Teams;
-   news?: News;
-   squad?: Squad;
-   leagues?: Leagues;
- }
-
- interface Matches {
+export interface Matches {
   datasetLength?: number;
   dataset?: MatchesDataset[];
   haveMore?: boolean;
 }
- interface Leagues {
-   datasetLength?: number;
-   dataset?: LeaguesDataset[];
-   haveMore?: boolean;
- }
+export interface Leagues {
+  datasetLength?: number;
+  dataset?: LeaguesDataset[];
+  haveMore?: boolean;
+}
 
 export interface LeaguesDataset {
   id?: string;
@@ -23,32 +15,32 @@ export interface LeaguesDataset {
   countryName?: string;
   countryCode?: string;
 }
- interface MatchesDataset {
+export interface MatchesDataset {
   pageUrl?: string;
   home?: AwayElement;
   away?: AwayElement;
   status?: Status;
 }
 
- interface AwayElement {
+export interface AwayElement {
   name?: string;
   id?: string;
 }
 
- interface Status {
+export interface Status {
   utcTime?: Date;
   started?: boolean;
   cancelled?: boolean;
   finished?: boolean;
 }
 
- interface News {
+export interface News {
   dataset?: NewsDataset[];
   datasetLength?: number;
   haveMore?: boolean;
 }
 
- interface NewsDataset {
+export interface NewsDataset {
   imageUrl?: string;
   title?: string;
   sourceStr?: string;
@@ -56,24 +48,32 @@ export interface LeaguesDataset {
   page?: Page;
 }
 
- interface Page {
+export interface Page {
   url?: string;
 }
 
- interface Squad {
+export interface Squad {
   datasetLength?: number;
   dataset?: SquadDataset[];
   haveMore?: boolean;
 }
 
- interface SquadDataset {
+export interface SquadDataset {
   id?: string;
   name?: string;
   teamName?: string;
 }
 
- interface Teams {
+export interface Teams {
   datasetLength?: number;
   dataset?: AwayElement[];
   haveMore?: boolean;
+}
+
+export interface ApiSearchResult {
+  matches?: Matches;
+  teams?: Teams;
+  news?: News;
+  squad?: Squad;
+  leagues?: Leagues;
 }
