@@ -5,7 +5,9 @@ const getPlayer = async (playerId: string, full: boolean = false) => {
   let { data } = await axios.get(
     `https://www.fotmob.com/api/playerData?id=${playerId}`
   );
-
+  if (!data) {
+  
+}
   if (full) {
     return data;
   }

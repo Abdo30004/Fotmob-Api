@@ -1,10 +1,10 @@
-import {getSearchResult} from '../src/functions/search';
+import { getSearchResult } from "../src/functions/getSearchResult";
 
 const test = async () => {
-    const result = await getSearchResult('messi');
-    console.log(result);
-}
+  const result = await getSearchResult("messi", {
+    filter: "squadMember"
+  });
+  console.log(result);
+};
 
 test();
-
-

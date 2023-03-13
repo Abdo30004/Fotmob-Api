@@ -23,7 +23,7 @@ const getTeam = (teamId, full = false) => __awaiter(void 0, void 0, void 0, func
     let { data } = yield axios_1.default
         .get(`https://www.fotmob.com/api/teams?id=${teamId}`)
         .catch((err) => err.response);
-    if (!data.details)
+    if (!(data === null || data === void 0 ? void 0 : data.details))
         throw new Error("Team not found");
     if (full) {
         return data;

@@ -13,7 +13,7 @@ const getTeam = async (
     .get(`https://www.fotmob.com/api/teams?id=${teamId}`)
     .catch((err) => err.response);
 
-  if (!data.details) throw new Error("Team not found");
+  if (!data?.details) throw new Error("Team not found");
   if (full) {
     return data;
   }

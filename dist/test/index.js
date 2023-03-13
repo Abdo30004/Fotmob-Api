@@ -9,9 +9,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const search_1 = require("../src/functions/search");
+const getSearchResult_1 = require("../src/functions/getSearchResult");
 const test = () => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield (0, search_1.getSearchResult)('messi');
+    const result = yield (0, getSearchResult_1.getSearchResult)("messi", {
+        filter: "squadMember"
+    });
     console.log(result);
 });
 test();

@@ -1,10 +1,6 @@
-import Team from "./structures/Team";
-import Player from "./structures/Player";
-import Match from "./structures/Match";
 import { getTeam } from "./functions/getTeam";
 import { getPlayer } from "./functions/getPlayer";
-import {getSearchResult} from "./functions/search";
+import { getSearchResult } from "./functions/getSearchResult";
 
-export { Team, Player, Match, getTeam, getPlayer };
-
-
+export default { getTeam, getPlayer, getSearchResult };
+export { getTeam, getPlayer, getSearchResult };

@@ -16,6 +16,8 @@ exports.getPlayer = void 0;
 const axios_1 = __importDefault(require("axios"));
 const getPlayer = (playerId, full = false) => __awaiter(void 0, void 0, void 0, function* () {
     let { data } = yield axios_1.default.get(`https://www.fotmob.com/api/playerData?id=${playerId}`);
+    if (!data) {
+    }
     if (full) {
         return data;
     }
